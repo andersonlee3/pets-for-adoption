@@ -4,7 +4,7 @@ Submitted by: **Anderson Lee**
 
 This web app: **displays pets up for adoption**
 
-Time spent: **X** hours spent in total
+Time spent: **6** hours spent in total
 
 ## Required Features
 
@@ -40,11 +40,11 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='./assets/pets4adoption.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
-GIF created with ...
+GIF created with ScreenCastify
 
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
@@ -55,9 +55,12 @@ GIF created with ...
 
 Describe any challenges encountered while building the app.
 
+- API return format
+- Thinking of good summary statistics
+
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2025] [Anderson Lee]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
