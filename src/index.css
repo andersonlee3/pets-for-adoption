@@ -24,8 +24,6 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -65,4 +63,40 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.pet-photo {
+  height: 10rem;
+  width: 10rem;
+}
+
+.pet-table {
+  border-collapse: collapse;
+  border-spacing: 1rem;
+  border: 0.5px solid white; 
+}
+
+.pet-table td,
+.pet-table th {
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
