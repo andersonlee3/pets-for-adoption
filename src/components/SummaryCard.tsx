@@ -6,23 +6,20 @@ interface Props {
 
 export default function SummaryCard({ numPets, numTypes, predomGen }: Props) {
   return (
-    <div>
-      <table>
-        <thead>
-          <tr>
-            <th>Number of Pets Displayed:</th>
-            <th>Number of Pet Types Displayed:</th>
-            <th>Predominant Gender of Pets Displayed:</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>{numPets}</td>
-            <td>{numTypes}</td>
-            <td>{predomGen}</td>
-          </tr>
-        </tbody>
-      </table>
+    <div className="summary-card">
+      <h3>Summary</h3>
+      <div className="summary-item">
+        <span className="summary-label">Total Pets:</span>
+        <span className="summary-value">{numPets}</span>
+      </div>
+      <div className="summary-item">
+        <span className="summary-label">Pet Types:</span>
+        <span className="summary-value">{numTypes}</span>
+      </div>
+      <div className="summary-item">
+        <span className="summary-label">Predominant Gender:</span>
+        <span className="summary-value">{predomGen}</span>
+      </div>
     </div>
   );
 }

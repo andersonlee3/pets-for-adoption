@@ -6,27 +6,19 @@ interface Props {
   url: string | null;
 }
 
-export default function PetListItem({ image, name, type, gender, url }: Props) {
+export default function PetListItem({ image, name, type, gender }: Props) {
   return (
-    <table className="pet-table">
-      <thead>
-        <tr>
-          <th></th>
-          <th>Name:</th>
-          <th>Link:</th>
-          <th>Type:</th>
-          <th>Gender</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{image && <img className="pet-photo" src={image}></img>}</td>
-          <td>{name}</td>
-          <td>{url && <a href={url}>{url}</a>}</td>
-          <td>{type}</td>
-          <td>{gender}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div className="pet-card">
+      {image && <img className="pet-card-photo" src={image} alt={name || "Pet"} />}
+      <div className="pet-card-info">
+        <h3>{name}</h3>
+        <p>
+          <strong>Type:</strong> {type}
+        </p>
+        <p>
+          <strong>Gender:</strong> {gender}
+        </p>
+      </div>
+    </div>
   );
 }
